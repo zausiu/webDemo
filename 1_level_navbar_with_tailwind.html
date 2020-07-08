@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="stylesheet" href="/build/tailwind.css">
+  <script src="/myjs.js" type="text/javascript"></script>
+  <title>Let's Build: With Tailwind CSS - Responsive Navbar</title>
+  <style>
+    .myfixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body class="antialiased bg-gray-200">
+  <header class="myfixed lg:px-16 px-6 bg-white flex flex-wrap items-center justify-between lg:justify-start lg:py-0 py-2" id="theHeader">
+
+    <div class="md:ml-8 lg:ml-20 flex-initial lg:block" id="siteIcon">
+        <a href="#">
+          <img class="rounded-full w-10 h-10 border-2 border-transparent hover:border-indigo-400" src="/sheep.png" alt="羊羊粤语">
+        </a>
+    </div>
+
+    <div class="lg:hidden" onclick="javascript:toggleNavbar();">
+        <svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+          <title>Navbar</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+    </div>
+
+    <nav class="hidden lg:flex lg:items-start lg:w-auto w-full" id="mainNavbar">
+      <ul class="lg:flex items-start justify-between text-base text-gray-698 pt-4 lg:pt-0">
+        <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="#">Features</a></li>
+        <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="#">Pricing</a></li>
+        <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="#">Documentation</a></li>
+        <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 lg:mb-0 mb-2" href="#">Support</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <div class="px-4">
+    <div class="max-w-3xl bg-white rounded-lg mx-auto my-16 p-16">
+      <h1 class="text-2xl font-medium mb-2">Let's Build: With Tailwind CSS</h1>
+      <h2 class="font-medium text-sm text-indigo-400 mb-4 uppercase tracking-wide">Responsive Navbar</h2>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum illo cupiditate molestias atque consequuntur ea quo cumque, odit velit sint similique? Asperiores ratione aperiam tempora, alias corrupti deleniti quaerat molestiae.
+    </div>
+  </div>
+</body>
+</html>
